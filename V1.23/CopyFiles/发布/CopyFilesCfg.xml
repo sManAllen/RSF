@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cfg>
+	<Sourse path="c:/wedata">
+		<dest path="c:/wedata1" />
+		<dest path="c:/wedata2" />
+		<dest path="c:/wedata3" />
+	</Sourse>
+	<Sourse path="c:/datatmp">
+		<dest path="c:/datatmp1" />
+		<dest path="c:/datatmp2" />
+		<dest path="c:/datatmp3" />
+	</Sourse>
+</Cfg>

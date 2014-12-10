@@ -1,0 +1,3 @@
+#!/bin/sh
+nohup java -jar CopyFiles.jar >/dev/null 2>/dev/null &
+

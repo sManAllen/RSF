@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<DataBaseCfg>
+		<Url>jdbc:oracle:thin:@172.16.160.60:1521:fdfs</Url>
+		<User>pv</User>
+		<Password>narisq</Password>
+	</DataBaseCfg>
+	<TowerTPs>
+		<TowerTP TowerFilePreffixName="QHGF-70096099-" IDInDB="77096099">
+			<LayerMap LayerInFile="V1" RealLayer="10" TableField="V1" bHubHeight="false" />
+			<LayerMap LayerInFile="V3" RealLayer="30" TableField="V3" bHubHeight="false" />
+			<LayerMap LayerInFile="V5" RealLayer="50" TableField="V5" bHubHeight="false" />
+			<LayerMap LayerInFile="V7" RealLayer="80" TableField="V7" bHubHeight="true" />
+		</TowerTP>
+	</TowerTPs>
+	<WindFarms>
+		<WindFarm EngineID="78096000" Name="GEMGDG" Capacity="10" EngineCount="10" >
+			<ReserveWordList>
+				<ReserveWord name="HeadComment"
+					value="//风场名称：山东.三山华能风电 | 部门：生产部| 联系人：韩镭| 办公电话：0532-85328951 | 手机：15254666647 | 邮件地址：hn_ljfd@vip.163.com" />
+				<ReserveWord name="Coordinates" value="70096099,E118.656333,N38.109833;
+							70096098,E118.656333,N38.1098335342523562;70096089,E118.656333,N38.10983312312" />
+			</ReserveWordList>
+			<EFileCfgList>
+				<EFileCfg RegionCode="GanSu" RegionDescription="BAIS01"
+					Charset="GBK">
+					<ShortEFileCfg08 On="false" IDInDB="78096000" TypeInDB="106" EFileSuffixName=".rb" EFilePrefixName="陕西.靖边光伏发电_72wind_" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="16:30" />
+					<ShortEFileCfg20 On="true" IDInDB="78096000" TypeInDB="106" EFileSuffixName="_DQ.PVD" EFilePrefixName="HNBYH1_" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="9:00" />
+					<UltraEFileCfg On="true" IDInDB="78096000" TypeInDB="202" EFileSuffixName="_CDQ.PVD" EFilePrefixName="HNBYH1_" SaveDir="D:\DiaoduUpLoad_DQ" />
+					<CftEFileCfg On="true" IDInDB="70096099,70096098" EFilePrefixName="HNBYH1_"  EFileSuffixName="_QXZ.PVD" SaveDir="D:\DiaoduUpLoad_DQ" />
+					<XDEFileCfg On="false" IDInDB="58109000" EFilePrefixName="云南.姚安大龙口风电限电日报_" EFileSuffixName=".RB" SaveDir="D:\DiaoduUpLoad_XD" LastTime="02:00" />
+					<QFEFileCfg On="false" IDInDB="58109000" EFilePrefixName="云南.姚安大龙口风电弃风日报_" EFileSuffixName=".RB" SaveDir="D:\DiaoduUpLoad_QF" LastTime="02:00" />
+					<ShortPlanCapacityEFileCfg On="false" IDInDB="58109000" TypeInDB="106" EFilePrefixName="云南.姚安大龙口风电计划开机容量_" EFileSuffixName=".RB" SaveDir="D:\DiaoduUpLoad_JX" LastTime="09:30" />
+					<Weather08UploadEFileCfg On="false" IDInDB="70096099" TypeInDB="1" EFileSuffixName="" EFilePrefixName="陕西.靖边光伏发电_24nwp_" SaveDir="" LastTime="17:00"/>
+					<Weather20UploadEFileCfg On="false" IDInDB="70190099" TypeInDB="1" EFileSuffixName=".rb" EFilePrefixName="陕西.靖边光伏发电_24nwp_" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="09:30"/>
+					<ThreeDayWeatherEFileCfg On="false"  IDInDB="70190099" TypeInDB="1" EFileSuffixName=".rb" EFilePrefixName="陕西.靖边光伏发电_72nwp_" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="09:00"/>
+					<LastDayEFileCfg On="false" EFileSuffixName=".rb" EFilePrefixName="陕西.靖边光伏发电_24Bwind_" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="08:30"/>
+					<UltraShortPlanCapacityEFileCfg On="false" IDInDB="58109000" EFilePrefixName="云南.姚安大龙口风电实时计划开机容量_" EFileSuffixName=".RB" SaveDir="D:\DiaoduUpLoad_CDQJX" />
+					<PowerScheduleEFileCfg On="false" EFileSuffixName="_RQ.rb" IDInDB="78096000" TypeInDB="205"
+							EFilePrefixName="GDZGEM_" SaveDir="D:\DiaoduUpLoad_CDQ" LastTime="09:30"/>
+					<ultraPowerScheduleEFileCfg On="false" EFileSuffixName=".RB" IDInDB="78096000" TypeInDB="204"
+							EFilePrefixName="山东.成山国华风电实时计划" SaveDir="D:\DiaoduUpLoad_DQ" />
+					<VoltageScheduleEFileCfg On="false"  EFileSuffixName=".RB" IDInDB="78096000" TypeInDB="206"
+							EFilePrefixName="山东.成山国华电压监视点目标值电压曲线" SaveDir="D:\DiaoduUpLoad_DQ" LastTime="09:30"/>
+					<InverterEFileCfg On="true" IDInDB="78096000" EFileSuffixName="_NBQ.PVD" EFilePrefixName="HNBYH1_" SaveDir="D:\DiaoduUpLoad_DQ" />
+				</EFileCfg>
+			</EFileCfgList>
+		</WindFarm>	
+	</WindFarms>
+</root>
+
